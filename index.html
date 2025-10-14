@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Buku Online BukuKita</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #333;
+        }
+        h2 {
+            color: #555;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+        .nav a {
+            color: blue;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+        .nav a:hover {
+            text-decoration: underline;
+        }
+        .link-separator {
+            color: #888;
+        }
+        .box {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-top: 15px;
+            background-color: #f9f9f9;
+        }
+        .form-group {
+            margin-bottom: 10px;
+        }
+        .form-group label {
+            display: inline-block;
+            width: 150px;
+            font-weight: bold;
+        }
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group textarea,
+        .form-group select {
+            width: 300px;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        .radio-group label {
+            font-weight: normal;
+        }
+        .submit-btn {
+            background-color: green;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .submit-btn:hover {
+            background-color: darkgreen;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Selamat Datang di BukuKita!</h1>
+
+    <p class="nav">
+        <strong>Toko Buku Online Terlengkap</strong>
+        <br>
+        <a href="#beranda">Beranda</a> 
+        <span class="link-separator">|</span> 
+        <a href="#katalog">Katalog</a> 
+        <span class="link-separator">|</span> 
+        <a href="#promo">Promo</a> 
+        <span class="link-separator">|</span> 
+        <a href="#tentang-kami">Tentang Kami</a> 
+        <span class="link-separator">|</span> 
+        <a href="#kontak">Kontak</a>
+    </p>
+
+    <hr>
+
+    <h2>Tentang Kami</h2>
+    <div class="box">
+        <p>
+            <strong>BukuKita</strong> adalah toko buku online yang didirikan sejak tahun 2019 dengan misi untuk menyebarkan literasi ke seluruh penjuru negeri. Kami percaya bahwa buku adalah jendela dunia. Melalui platform ini, kami menyediakan akses mudah ke berbagai jenis buku, mulai dari fiksi, non-fiksi, buku pelajaran, hingga buku langka.
+        </p>
+        <p>
+            Visi kami adalah menjadi platform toko buku online terdepan di Indonesia yang inovatif dan terpercaya.
+        </p>
+    </div>
+
+    <h2>Hubungi Kami</h2>
+    <form action="#" method="POST">
+        <div class="form-group">
+            <label for="nama">Nama Lengkap</label>
+            <input type="text" id="nama" name="nama" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="telepon">Nomor Telepon</label>
+            <input type="text" id="telepon" name="telepon">
+        </div>
+
+        <div class="form-group">
+            <label for="tujuan">Tujuan Pesan</label>
+            <select id="tujuan" name="tujuan">
+                <option value="umum">Informasi Umum</option>
+                <option value="pemesanan">Pertanyaan Pemesanan</option>
+                <option value="kerjasama">Kerjasama</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="pesan">Pesan/Kritik</label>
+            <textarea id="pesan" name="pesan" rows="5"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label>Bagaimana Anda Mengetahui Kami? (Pilih satu)</label>
+            <div class="radio-group">
+                <input type="radio" id="media-sosial" name="sumber" value="media-sosial">
+                <label for="media-sosial">Media Sosial</label><br>
+
+                <input type="radio" id="iklan-online" name="sumber" value="iklan-online">
+                <label for="iklan-online">Iklan Online</label><br>
+
+                <input type="radio" id="rekomendasi" name="sumber" value="rekomendasi">
+                <label for="rekomendasi">Rekomendasi Teman</label><br>
+
+                <input type="radio" id="mesin-pencari" name="sumber" value="mesin-pencari">
+                <label for="mesin-pencari">Mesin Pencari (Google, dsb.)</label><br>
+            </div>
+        </div>
+
+        <button type="submit" class="submit-btn">Kirim Pesan</button>
+    </form>
+
+</body>
+</html>
